@@ -1,0 +1,417 @@
+<resources>
+    <string name="app_name">newark</string>
+
+    <string name="language">ENGLISH</string>
+    <string name="setting">STATUS</string>
+
+    <string name="open">OPEN</string>
+    <string name="close">CLOSE</string>
+    <string name="one">01</string>
+    <string name="two">02</string>
+    <string name="three">03</string>
+    <string name="four">04</string>
+
+    <string name="emergency_mode">EMERGENCY</string>
+    <string name="sewage">SEWAGE</string>
+    <string name="escape">EMERGENCY EXIT</string>
+    <string name="scuttle">SUNFOOR</string>
+    <string name="way_out">WAY OUT</string>
+    <string name="door">door</string>
+    <string name="compress">SEAL</string>
+    <string name="lock">lock</string>
+    <string name="decompress">UNSEAL</string>
+    <string name="windows">WINDOW</string>
+
+    <string name="light">LIGHT</string>
+    <string name="primary_light">MAIN ROOM</string>
+    <string name="toilet_light">TOILET</string>
+    <string name="mood_light_1">LIGHT MOOD 1</string>
+    <string name="mood_light_2">LIGHT MOOD 2</string>
+    <string name="mood_light">MOOD LIGHT</string>
+    <string name="light_1">1</string>
+    <string name="light_2">2</string>
+
+    <string name="percent">%</string>
+    <string name="water_rest">WATER</string>
+    <string name="battery_rest">ELECTRICITY</string>
+
+    <string name="temperature">°C</string>
+    <string name="rh">%RH</string>
+    <string name="ppm">PPM</string>
+
+    <string name="ventilate">AIR RECYCLE</string>
+
+    <string name="disinfect">DISINFECTION</string>
+    <string name="add_water">WATER REFILL</string>
+
+    <string name="o2">O2</string>
+    <string name="co2">CO2</string>
+    
+    <string name="environment">environment</string>
+    <string name="escape_and_door_state">escape、door state</string>
+    <string name="windows_state">windows state</string>
+    <string name="system_state">system state</string>
+    
+    <string name="window_1_reset">window 1 reset</string>
+    <string name="window_2_reset">window 2 reset</string>
+    <string name="window_3_reset">window 3 reset</string>
+    <string name="window_4_reset">window 4 reset</string>
+    <string name="window_reset">window reset</string>
+    <string name="escape_reset">escape reset</string>
+    <string name="door_2_reset">door 2 reset</string>
+    <string name="under_escape_reset">under escape reset</string>
+    <string name="smog_alarm_reset">smog alarm reset</string>
+    <string name="disable_alarm">disable alarm</string>
+    <string name="enable_alarm">enable alarm</string>
+    <string name="back">back</string>
+
+    <string name="name">item</string>
+    <string name="current_value">value</string>
+    <string name="current_state">status</string>
+    <string name="warning">warning</string>
+
+    <string name="in_emergency_mode">in emergency mode</string>
+    <string name="in_sewage_mode">in sewage mode</string>
+
+    <string name="ok">OK</string>
+    <string name="cancel">CANCEL</string>
+    <string name="prompt">PROMPT</string>
+    <string name="prompt_content">This page is for maintenance personnel ONLY, please input password</string>
+    <string name="password_error">password is error</string>
+
+
+    <!-- prompt -->
+    <string name="door_decompressing">door sealing</string>
+    <string name="door_compressing">door unsealing</string>
+
+    <string name="sunfoor_opening">sunroof opening</string>
+    <string name="sunfoor_closing">sunroof closing</string>
+
+    <string name="escape_opening">emergency exit opening</string>
+    <string name="escape_closing">emergency exit closing</string>
+    <string name="escape_init">emergency exit position initializing</string>
+
+    <string name="window_1_opening">window 1# opening</string>
+    <string name="window_1_closing">window 1# closing</string>
+    <string name="window_1_init">window 1# position initializing</string>
+    <string name="window_2_opening">window 2# opening</string>
+    <string name="window_2_closing">window 2# closing</string>
+    <string name="window_2_init">window 2# position initializing</string>
+    <string name="window_3_opening">window 3# opening</string>
+    <string name="window_3_closing">window 3# closing</string>
+    <string name="window_3_init">window 3# position initializing</string>
+    <string name="window_4_opening">window 4# opening</string>
+    <string name="window_4_closing">window 4# closing</string>
+    <string name="window_4_init">window 4# position initializing</string>
+    <string name="window_opening">window opening</string>
+    <string name="window_closing">window closing</string>
+    <string name="window_init">window position initializing</string>
+
+    <string name="disinfect_light_on">disinfect light is on,need 30 minutes</string>
+    <string name="disinfect_done">disinfect is done</string>
+
+    <!-- warning and error -->
+    <string name="ups_load_over_limit">UPS electrical socket overload</string>
+    <string name="air_loop_when_emergency">emergency air exchange</string>
+    <string name="water_tank_over_time">water exchange needed</string>
+    <string name="disinfect_over_time">disinfection needed</string>
+    <string name="disinfect_over_time_item">disinfection needed</string>
+    <string name="in_key_emergency">emergency button on</string>
+    <string name="water_rest_sensor_error">water level sensor fault</string>
+    <string name="water_press_sensor_error">water pressure sensor fault</string>
+    <string name="escape_line_sensor_error">emergency exit position sensor fault</string>
+    <string name="temperature_sensor_error">temperature sensor fault</string>
+    <string name="humidity_sensor_error">humidity sensor fault</string>
+    <string name="o2_sensor_error">O2 sensor fault</string>
+    <string name="co2_sensor_error">CO2 sensor fault</string>
+    <string name="ups_check_error">UPS status sensor fault</string>
+    <string name="power_rest_check_error">battery level sensor fault</string>
+    <string name="water_in_valve_error">water refill lock fault</string>
+    <string name="water_tank_valve_error">water tank lock fault</string>
+    <string name="water_out_valve_error">sewerage lock fault</string>
+    <string name="pump_booster_error">water pump fault</string>
+    <string name="pump_sewage_error">sewage pump fault</string>
+    <string name="gas_in_valve_1_error">air in vent 1 fault</string>
+    <string name="gas_in_valve_2_error">air in vent 2 fault</string>
+    <string name="gas_out_valve_error">air out vent fault</string>
+    <string name="hot_water_in_valve_error">hot water in valve error</string>
+    <string name="gas_out_left_valve_error">gas out left valve error</string>
+    <string name="gas_out_right_valve_error">gas out right valve error</string>
+    <string name="gas_toilet_out_valve_error">toilet air vent fault</string>
+    <string name="gas_in_fan_error">air in fan fault</string>
+    <string name="gas_out_fan_error">air out fan fault</string>
+    <string name="gas_toilet_out_fan_error">toilet fan fault</string>
+    <string name="air_controller_error">air condition fault</string>
+
+    <string name="door_emergency_open">emergency mode door closing fail</string>
+    <string name="door_emergency_unimapceted">emergency mode door sealing fail</string>
+    <string name="door_manual_in">manual mode on</string>
+    <string name="door_opened_when_impacted">hermetic condition fail－door open</string>
+    <string name="door_pin_failed">auto bolt fail</string>
+    <string name="door_wedge_failed">auto seal wedge fail</string>
+    <string name="door_detect_impacted_failed">door sealing fail</string>
+
+    <string name="escape_emergency_open">emergency mode exit closing fail</string>
+    <string name="escape_manual_in">manual mode on</string>
+    <string name="escape_anti_clamp">Mind your hand</string>
+    <string name="escape_sensor_lost">escape sensor missing</string>
+    <string name="escape_close_sensor_error">emergency exit full close sensor fault</string>
+    <string name="escape_open_sensor_error">emergency exit full open sensor fault</string>
+    <string name="escape_mechanism_error">possible mechanical err</string>
+    <string name="escape_position_lost">position missing</string>
+    <string name="escape_over_torque">torque overload</string>
+
+    <string name="window_1_emergency_open">window 1# emergency mode closing fail</string>
+    <string name="window_1_position_lost">window 1# position missing</string>
+    <string name="window_1_close_sensor_error">window 1# lock no responding on closing position</string>
+    <string name="window_1_open_sensor_error">window 1# lock no responding on opening position</string>
+    <string name="window_1_over_torque">window 1# torque overload</string>
+    <string name="window_1_manual_mode_on">window 1# manual mode on</string>
+    <string name="window_2_emergency_open">window 2# emergency mode closing fail</string>
+    <string name="window_2_position_lost">window 2# position missing</string>
+    <string name="window_2_close_sensor_error">window 2# lock no responding on closing position</string>
+    <string name="window_2_open_sensor_error">window 2# lock no responding on opening position</string>
+    <string name="window_2_over_torque">window 2# torque overload</string>
+    <string name="window_2_manual_mode_on">window 2# manual mode on</string>
+    <string name="window_3_emergency_open">window 3# emergency mode closing fail</string>
+    <string name="window_3_position_lost">window 3# position missing</string>
+    <string name="window_3_close_sensor_error">window 3# lock no responding on closing position</string>
+    <string name="window_3_open_sensor_error">window 3# lock no responding on opening position</string>
+    <string name="window_3_over_torque">window 3# torque overload</string>
+    <string name="window_3_manual_mode_on">window 3# manual mode on</string>
+    <string name="window_4_emergency_open">window 4# emergency mode closing fail</string>
+    <string name="window_4_position_lost">window 4# position missing</string>
+    <string name="window_4_close_sensor_error">window 4# lock no responding on closing position</string>
+    <string name="window_4_open_sensor_error">window 4# lock no responding on opening position</string>
+    <string name="window_4_over_torque">window 4# torque overload</string>
+    <string name="window_4_manual_mode_on">window 4# manual mode on</string>
+    <string name="window_emergency_open">window emergency mode closing fail</string>
+    <string name="window_position_lost">window position missing</string>
+    <string name="window_close_sensor_error">window lock no responding on closing position</string>
+    <string name="window_open_sensor_error">window lock no responding on opening position</string>
+    <string name="window_manual_mode_on">window manual mode on</string>
+    <string name="window_over_torque">window torque overload</string>
+
+    <string name="life_smoke_warning">living area smog alarm</string>
+    <string name="device_smoke_warning">equipment compartment smog alarm</string>
+    <string name="life_smoke_warning_text">living area smog alarm，please check!</string>
+    <string name="device_smoke_warning_text">equipment compartment smog alarm，please check!</string>
+    <string name="life_smoke_no_warning">living area no smog alarm</string>
+    <string name="device_smoke_no_warning">equipment compartment no smog alarm</string>
+    <string name="water_press_low_when_add">municipal water pressure low when add</string>
+    <string name="water_tank_low_when_add">water tank stock low when add</string>
+
+    <string name="water_press_low">municipal water pressure low</string>
+    <string name="water_tank_low">water tank stock low</string>
+
+    <string name="connecting_net">connecting net...</string>
+    <string name="connecting_net1">connecting net......</string>
+    <string name="connecting_net2">connecting net</string>
+
+    <string name="open_control_system">open control</string>
+    <string name="close_control_system">close control</string>
+
+    <string name="add_water_in_tank">adding water in tank</string>
+    <string name="disinfect_prepare">disinfect prepare,please go out</string>
+    <string name="no_disinfect_in_emergency">no disinfect in emergency</string>
+    <string name="no_add_water_in_emergency">no adding water in emergency</string>
+    <string name="disabled_alarm">alarm is disabled</string>
+    <string name="sewage_need_in_emergency">sewage need in emergency</string>
+    <string name="not_for_o2_co2_smog">not for o2,co2 and smog alarm</string>
+
+    <string name="o2_density_low_1">O2 density low 1</string>
+    <string name="o2_density_low_2">O2 density low 2</string>
+    <string name="o2_density_low_3">O2 density low 3</string>
+    <string name="co2_density_high_1">CO2 density high 1</string>
+    <string name="co2_density_high_2">CO2 density high 2</string>
+    <string name="co2_density_high_3">CO2 density high 3</string>
+
+    <string name="o2_density_low_1_item">O2 density low 1</string>
+    <string name="o2_density_low_2_item">O2 density low 2</string>
+    <string name="o2_density_low_3_item">O2 density low 3</string>
+    <string name="co2_density_high_1_item">CO2 density high 1</string>
+    <string name="co2_density_high_2_item">CO2 density high 2</string>
+    <string name="co2_density_high_3_item">CO2 density high 3</string>
+
+    //maintain
+    //environment
+    <string name="environment_status_warning">environment status and warning</string>
+
+    <string name="environment_status_information">environment status information</string>
+    <string name="life_cabin_temperature">temperature in life cabin</string>
+    <string name="life_cabin_humidity">humidity in life cabin</string>
+    <string name="water_rest_percent">water rest</string>
+    <string name="water_in_pressure">pressure of water in</string>
+    <string name="o2_density">density of O2</string>
+    <string name="co2_density">density of CO2</string>
+    <string name="ups_power_rest">ups battery rest</string>
+    <string name="ups_electricity">ups electricity</string>
+    <string name="life_cabin_smog_warning">life cabin smog warning</string>
+    <string name="device_cabin_smog_warning">device cabin smog warning</string>
+    <string name="life_cabin_temperature_high">high temperature life cabin</string>
+    <string name="device_cabin_temperature_high">high temperature device cabin</string>
+    <string name="main_air_condition_running">main air condition status</string>
+    <string name="backup_air_condition_running">backup air condition status</string>
+
+    <string name="environment_warning_information">environment warning information</string>
+    <!--<string name="o2_density_low_1">O2 density low 1</string>-->
+    <!--<string name="o2_density_low_2">O2 density low 2</string>-->
+    <!--<string name="o2_density_low_3">O2 density low 3</string>-->
+    <!--<string name="co2_density_high_1">CO2 density high 1</string>-->
+    <!--<string name="co2_density_high_2">CO2 density high 2</string>-->
+    <!--<string name="co2_density_high_3">CO2 density high 3</string>-->
+    <!--<string name="ups_load_over_limit">UPS electrical socket overload</string>-->
+    <!--<string name="air_loop_when_emergency">emergency air exchange</string>-->
+    <!--<string name="disinfect_over_time">disinfection needed</string>-->
+    <!--<string name="life_smoke_warning">living area smog alarm</string>-->
+    <!--<string name="device_smoke_warning">equipment compartment smog alarm</string>-->
+
+    //door
+    <string name="door_status_and_warning">door status and warning</string>
+
+    <string name="door_status_information">door status information</string>
+    <string name="door_compressed">door compressed</string>
+    <string name="door_decompressed">door decompressed</string>
+    <string name="compressing">compressing</string>
+    <string name="decompressing">decompressing</string>
+    <string name="door_open_status">door open status</string>
+    <string name="door_lock_status">door close status</string>
+
+    <string name="door_warning_information">door warning information</string>
+    <!--<string name="door_emergency_open">emergency mode door closing fail</string>-->
+    <!--<string name="door_emergency_unimapceted">emergency mode door sealing fail</string>-->
+    <!--<string name="door_manual_in">manual mode on</string>-->
+    <!--<string name="door_opened_when_impacted">hermetic condition fail－door open</string>-->
+    <!--<string name="door_pin_failed">auto bolt fail</string>-->
+    <!--<string name="door_wedge_failed">auto seal wedge fail</string>-->
+    <!--<string name="door_detect_impacted_failed">door sealing fail</string>-->
+    
+    //window
+    <string name="window_status_and_warning">window status and warning</string>
+    
+    <string name="window_status_information">window status information</string>
+    <string name="window_close_status">window close status</string>
+    <string name="window_middle_position">window middle position</string>
+    <string name="window_open_completely">window open completely</string>
+    <!--<string name="window_opening">window opening</string>-->
+    <!--<string name="window_closing">window closing</string>-->
+    <!--<string name="window_init">window position initializing</string>-->
+    <string name="window_1_status_information">window status information</string>
+    <string name="window_1_close_status">window close status</string>
+    <string name="window_1_middle_position">window middle position</string>
+    <string name="window_1_open_completely">window open completely</string>
+    <string name="window_2_status_information">window status information</string>
+    <string name="window_2_close_status">window close status</string>
+    <string name="window_2_middle_position">window middle position</string>
+    <string name="window_2_open_completely">window open completely</string>
+    <string name="window_3_status_information">window status information</string>
+    <string name="window_3_close_status">window close status</string>
+    <string name="window_3_middle_position">window middle position</string>
+    <string name="window_3_open_completely">window open completely</string>
+    <string name="window_4_status_information">window status information</string>
+    <string name="window_4_close_status">window close status</string>
+    <string name="window_4_middle_position">window middle position</string>
+    <string name="window_4_open_completely">window open completely</string>
+    
+    <string name="window_warning_information">window warning information</string>
+    <!--<string name="window_emergency_open">window emergency mode closing fail</string>-->
+    <!--<string name="window_position_lost">window position missing</string>-->
+    <!--<string name="window_close_sensor_error">window lock no responding on closing position</string>-->
+    <!--<string name="window_open_sensor_error">window lock no responding on opening position</string>-->
+    <!--<string name="window_manual_mode_on">window manual mode on</string>-->
+    <!--<string name="window_over_torque">window torque overload</string>-->
+    <string name="window_error_code">window error code</string>
+    <string name="window_1_error_code">1# window error code</string>
+    <string name="window_2_error_code">2# window error code</string>
+    <string name="window_3_error_code">3# window error code</string>
+    <string name="window_4_error_code">4# window error code</string>
+
+    //escape
+    <string name="escape_status_warning">escape status and warning</string>
+
+    <string name="escape_status_information">escape status information</string>
+    <string name="scuttle_close_status">scuttle close status</string>
+    <string name="scuttle_middle_position">scuttle is middle position</string>
+    <string name="scuttle_open_status">scuttle open status</string>
+    <string name="escape_middle_position">escape is middle position</string>
+    <string name="escape_open_completely">escape open completely</string>
+    <!--<string name="sunfoor_opening">sunroof opening</string>-->
+    <!--<string name="sunfoor_closing">sunroof closing</string>-->
+    <!--<string name="escape_opening">emergency exit opening</string>-->
+    <!--<string name="escape_closing">emergency exit closing</string>-->
+    <!--<string name="escape_init">emergency exit position initializing</string>-->
+
+    <string name="escape_warning_information">escape warning information</string>
+    <!--<string name="escape_emergency_open">emergency mode exit closing fail</string>-->
+    <!--<string name="escape_manual_in">manual mode on</string>-->
+    <!--<string name="escape_anti_clamp">Mind your hand</string>-->
+    <!--<string name="escape_sensor_lost">escape sensor missing</string>-->
+    <!--<string name="escape_close_sensor_error">emergency exit full close sensor fault</string>-->
+    <!--<string name="escape_open_sensor_error">emergency exit full open sensor fault</string>-->
+    <!--<string name="escape_mechanism_error">possible mechanical err</string>-->
+    <!--<string name="escape_position_lost">position missing</string>-->
+    <!--<string name="escape_over_torque">torque overload</string>-->
+    <string name="escape_error_code">escape error code</string>
+    <string name="door_2_error_code">door 2 error code</string>
+    <string name="under_escape_error_code">underescape error code</string>
+
+    //control system
+    <string name="control_system">control system</string>
+    <string name="ele_status">ele status</string>
+    <string name="ups_status">ups status</string>
+    <string name="control_system_status">control system status</string>
+    <string name="in_emergency">emergency on</string>
+    <!--<string name="in_key_emergency">emergency button on</string>-->
+    <string name="ventilate_status">ventilate status</string>
+    <string name="ventilate_level_1">ventilate in level 1</string>
+    <string name="ventilate_level_2">ventilate in level 2</string>
+    <string name="water_in">water in</string>
+    <string name="water_in_tank">water in tank</string>
+    <string name="sewage_out">sewage out</string>
+    <string name="booster_pump">booster pump</string>
+    <string name="sewage_pump">sewage pump</string>
+    <string name="gas_in_valve_1">gas in valve 1</string>
+    <string name="gas_in_valve_2">gas in valve 2</string>
+    <string name="gas_out_valve">gas out valve</string>
+    <string name="gas_out_fan">gas out fan</string>
+    <string name="gas_in_fan_1">gas in fan 1</string>
+    <string name="gas_in_fan_2">gas in fan 1</string>
+    <string name="primary_light_status">main light status</string>
+    <string name="mood_light_status">mood light status</string>
+    <string name="germ_light_status">germ light status</string>
+    <!--<string name="disinfect_prepare">disinfect prepare,please go out</string>-->
+    <!--<string name="no_disinfect_in_emergency">no disinfect in emergency</string>-->
+    <!--<string name="disinfect_done">disinfect is done</string>-->
+
+    //error and warning
+    <string name="device_error_and_warning">device error and warning</string>
+    <!--<string name="escape_line_sensor_error">emergency exit position sensor fault</string>-->
+    <string name="life_temperature_sensor_error">life temperature sensor fault</string>
+    <string name="life_humidity_sensor_error">life humidity sensor fault</string>
+    <string name="device_temperature_sensor_error">device temperature sensor fault</string>
+    <string name="device_humidity_sensor_error">device humidity sensor fault</string>
+    <!--<string name="o2_sensor_error">O2 sensor fault</string>-->
+    <!--<string name="co2_sensor_error">CO2 sensor fault</string>-->
+    <!--<string name="ups_check_error">UPS status sensor fault</string>-->
+    <!--<string name="gas_in_valve_1_error">air in vent 1 fault</string>-->
+    <!--<string name="gas_in_valve_2_error">air in vent 2 fault</string>-->
+    <!--<string name="gas_out_valve_error">air out vent fault</string>-->
+    <string name="gas_in_fan_1_error">air in fan 1 fault</string>
+    <string name="gas_in_fan_2_error">air in fan 2 fault</string>
+    <!--<string name="gas_out_fan_error">air out fan fault</string>-->
+
+    <string name="if_open_control_system">do you want to open control system?</string>
+    <string name="if_close_control_system">do you want to close control system?</string>
+    <string name="if_open_emergency_mode">do you want to open emergency mode?</string>
+    <string name="if_compress_door">forbid bring pad out of cabin when compress door, do you want to compress door?</string>
+
+    <string name="should_close_air_condition">please close air condition</string>
+
+    <string name="up_escape">up escape</string>
+    <string name="under_escape">under escape</string>
+    <string name="door_2">door 2</string>
+
+    <string name="tatami_light">tatami light</string>
+    <string name="out_spotlight">out spotlight</string>
+
+</resources>

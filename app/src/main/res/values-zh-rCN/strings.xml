@@ -1,0 +1,417 @@
+<resources>
+    <string name="app_name">newark</string>
+
+    <string name="language">中文</string>
+    <string name="setting">维护</string>
+
+    <string name="open">开启</string>
+    <string name="close">关闭</string>
+    <string name="one">01</string>
+    <string name="two">02</string>
+    <string name="three">03</string>
+    <string name="four">04</string>
+
+    <string name="emergency_mode">紧急模式</string>
+    <string name="sewage">紧急排污</string>
+    <string name="escape">逃逸口</string>
+    <string name="scuttle">天窗</string>
+    <string name="way_out">逃生</string>
+    <string name="door">舱门</string>
+    <string name="compress">压紧</string>
+    <string name="lock">反锁</string>
+    <string name="decompress">解压</string>
+    <string name="windows">安全窗</string>
+
+    <string name="light">照明</string>
+    <string name="primary_light">主照明</string>
+    <string name="toilet_light">厕所照明</string>
+    <string name="mood_light_1">上氛围灯</string>
+    <string name="mood_light_2">下氛围灯</string>
+    <string name="mood_light">氛围灯</string>
+    <string name="light_1">1</string>
+    <string name="light_2">2</string>
+
+    <string name="percent">%</string>
+    <string name="water_rest">水箱剩余</string>
+    <string name="battery_rest">UPS电池余量</string>
+
+    <string name="temperature">°C</string>
+    <string name="rh">%RH</string>
+    <string name="ppm">PPM</string>
+
+    <string name="ventilate">通风换气</string>
+
+    <string name="disinfect">紫外消毒</string>
+    <string name="add_water">手动补水</string>
+
+    <string name="o2">O2</string>
+    <string name="co2">CO2</string>
+
+    <string name="environment">舱内环境状态</string>
+    <string name="escape_and_door_state">逃生口、舱门状态</string>
+    <string name="windows_state">1#窗-4#窗状态</string>
+    <string name="system_state">中控系统状态</string>
+
+    <string name="window_1_reset">1#窗驱动器报警复位</string>
+    <string name="window_2_reset">2#窗驱动器报警复位</string>
+    <string name="window_3_reset">3#窗驱动器报警复位</string>
+    <string name="window_4_reset">4#窗驱动器报警复位</string>
+    <string name="window_reset">窗驱动器报警复位</string>
+    <string name="escape_reset">逃逸口驱动器报警复位</string>
+    <string name="door_2_reset">内门驱动器报警复位</string>
+    <string name="under_escape_reset">下逃逸口驱动器报警复位</string>
+    <string name="smog_alarm_reset">烟雾报警复位</string>
+    <string name="disable_alarm">屏蔽警示</string>
+    <string name="enable_alarm">开启警示</string>
+    <string name="back">返回</string>
+
+    <string name="name">名称</string>
+    <string name="current_value">当前值</string>
+    <string name="current_state">当前状态</string>
+    <string name="warning">警示</string>
+
+    <string name="in_emergency_mode">已开启紧急模式</string>
+    <string name="in_sewage_mode">已开启紧急排污</string>
+
+    <string name="ok">确定</string>
+    <string name="cancel">取消</string>
+    <string name="prompt">提示</string>
+    <string name="prompt_content">该页面仅供维护人员使用，请输入密码</string>
+    <string name="password_error">密码错误</string>
+
+
+    <!-- prompt -->
+    <string name="door_decompressing">正在解压舱门</string>
+    <string name="door_compressing">正在压紧舱门</string>
+
+    <string name="sunfoor_opening">正在开启天窗</string>
+    <string name="sunfoor_closing">正在关闭天窗</string>
+
+    <string name="escape_opening">正在开启逃生口</string>
+    <string name="escape_closing">正在关闭逃生口</string>
+    <string name="escape_init">逃生口正在初始化位置</string>
+
+    <string name="window_1_opening">正在开启窗1#</string>
+    <string name="window_1_closing">正在关闭窗1#</string>
+    <string name="window_1_init">窗1#正在初始化位置</string>
+    <string name="window_2_opening">正在开启窗2#</string>
+    <string name="window_2_closing">正在关闭窗2#</string>
+    <string name="window_2_init">窗2#正在初始化位置</string>
+    <string name="window_3_opening">正在开启窗3#</string>
+    <string name="window_3_closing">正在关闭窗3#</string>
+    <string name="window_3_init">窗3#正在初始化位置</string>
+    <string name="window_4_opening">正在开启窗4#</string>
+    <string name="window_4_closing">正在关闭窗4#</string>
+    <string name="window_4_init">窗4#正在初始化位置</string>
+    <string name="window_opening">正在开启窗</string>
+    <string name="window_closing">正在关闭窗</string>
+    <string name="window_init">窗正在初始化位置</string>
+
+    <string name="disinfect_light_on">紫外消毒灯已开启,消毒时间30分钟</string>
+    <string name="disinfect_done">消毒已完成</string>
+
+    <!-- warning and error -->
+    <string name="ups_load_over_limit">UPS插座超出允许负载</string>
+    <string name="air_loop_when_emergency">紧急状态下空气交换</string>
+    <string name="water_tank_over_time">水箱超过30天未使用或更换水</string>
+    <string name="disinfect_over_time">舱内超过60天未消毒杀菌</string>
+    <string name="disinfect_over_time_item">长时间未消毒杀菌</string>
+    <string name="in_key_emergency">物理按钮处于紧急模式</string>
+    <string name="water_rest_sensor_error">水箱液位传感器故障</string>
+    <string name="water_press_sensor_error">市政水压传感器故障</string>
+    <string name="escape_line_sensor_error">逃逸口拉线传感器故障</string>
+    <string name="temperature_sensor_error">温度传感器故障</string>
+    <string name="humidity_sensor_error">湿度传感器故障</string>
+    <string name="o2_sensor_error">O2传感器故障</string>
+    <string name="co2_sensor_error">CO2传感器故障</string>
+    <string name="ups_check_error">UPS插座用电监测传感器故障</string>
+    <string name="power_rest_check_error">剩余电量监测故障</string>
+    <string name="water_in_valve_error">进水总阀故障</string>
+    <string name="water_tank_valve_error">水箱阀门故障</string>
+    <string name="water_out_valve_error">排污总阀故障</string>
+    <string name="pump_booster_error">增压泵故障</string>
+    <string name="pump_sewage_error">提污泵故障</string>
+    <string name="gas_in_valve_1_error">榻榻米进气阀门1故障</string>
+    <string name="gas_in_valve_2_error">榻榻米进气阀门2故障</string>
+    <string name="gas_out_valve_error">榻榻米排气阀门故障</string>
+    <string name="gas_toilet_out_valve_error">厕所排气阀门故障</string>
+    <string name="hot_water_in_valve_error">热水器进水阀门故障</string>
+    <string name="gas_out_left_valve_error">设备室左排气阀门故障</string>
+    <string name="gas_out_right_valve_error">设备室右排气阀门故障</string>
+    <string name="gas_in_fan_error">进气风机故障</string>
+    <string name="gas_out_fan_error">排气风机故障</string>
+    <string name="gas_toilet_out_fan_error">厕所排气风机故障</string>
+    <string name="air_controller_error">空调故障</string>
+
+    <string name="door_emergency_open">紧急状态下门未关闭</string>
+    <string name="door_emergency_unimapceted">紧急状态下门未密封</string>
+    <string name="door_manual_in">舱门手柄处于插入状态</string>
+    <string name="door_opened_when_impacted">密封时门处于开启状态</string>
+    <string name="door_pin_failed">舱门电动插销动作失败</string>
+    <string name="door_wedge_failed">电动压紧及解压楔子失败</string>
+    <string name="door_detect_impacted_failed">舱门不能检测到压紧</string>
+
+    <string name="escape_emergency_open">紧急状态逃生口未关闭</string>
+    <string name="escape_manual_in">逃生口手柄插入</string>
+    <string name="escape_anti_clamp">逃生口防夹警告</string>
+    <string name="escape_sensor_lost">逃生口拉线传感器故障</string>
+    <string name="escape_close_sensor_error">逃生口全关传感器故障</string>
+    <string name="escape_open_sensor_error">逃生口全开传感器故障</string>
+    <string name="escape_mechanism_error">逃生口疑似机构故障</string>
+    <string name="escape_position_lost">逃生口位置丢失</string>
+    <string name="escape_over_torque">逃生口驱动故障</string>
+
+    <string name="window_1_emergency_open">窗1#紧急状态未关闭</string>
+    <string name="window_1_position_lost">窗1#位置丢失</string>
+    <string name="window_1_close_sensor_error">窗1#关到位接近开关未动作</string>
+    <string name="window_1_open_sensor_error">窗1#开到位接近开关未动作</string>
+    <string name="window_1_over_torque">窗1#驱动故障</string>
+    <string name="window_1_manual_mode_on">窗1#手柄处于插入状态</string>
+    <string name="window_2_emergency_open">窗2#紧急状态未关闭</string>
+    <string name="window_2_position_lost">窗2#位置丢失</string>
+    <string name="window_2_close_sensor_error">窗2#关到位接近开关未动作</string>
+    <string name="window_2_open_sensor_error">窗2#开到位接近开关未动作</string>
+    <string name="window_2_over_torque">窗2#驱动故障</string>
+    <string name="window_2_manual_mode_on">窗2#手柄处于插入状态</string>
+    <string name="window_3_emergency_open">窗3#紧急状态未关闭</string>
+    <string name="window_3_position_lost">窗3#位置丢失</string>
+    <string name="window_3_close_sensor_error">窗3#关到位接近开关未动作</string>
+    <string name="window_3_open_sensor_error">窗3#开到位接近开关未动作</string>
+    <string name="window_3_over_torque">窗3#驱动故障</string>
+    <string name="window_3_manual_mode_on">窗3#手柄处于插入状态</string>
+    <string name="window_4_emergency_open">窗4#紧急状态未关闭</string>
+    <string name="window_4_position_lost">窗4#位置丢失</string>
+    <string name="window_4_close_sensor_error">窗4#关到位接近开关未动作</string>
+    <string name="window_4_open_sensor_error">窗4#开到位接近开关未动作</string>
+    <string name="window_4_over_torque">窗4#驱动故障</string>
+    <string name="window_4_manual_mode_on">窗4#手柄处于插入状态</string>
+    <string name="window_emergency_open">窗紧急状态未关闭</string>
+    <string name="window_position_lost">窗位置丢失</string>
+    <string name="window_close_sensor_error">窗关到位接近开关未动作</string>
+    <string name="window_open_sensor_error">窗开到位接近开关未动作</string>
+    <string name="window_manual_mode_on">窗手柄处于插入状态</string>
+    <string name="window_over_torque">窗驱动故障</string>
+
+    <string name="life_smoke_warning">生活舱烟雾报警</string>
+    <string name="device_smoke_warning">设备舱烟雾报警</string>
+    <string name="life_smoke_warning_text">生活舱烟雾报警，请检查舱内设施！</string>
+    <string name="device_smoke_warning_text">设备舱烟雾报警，请检查设备舱内设施！</string>
+    <string name="life_smoke_no_warning">生活舱无烟雾报警</string>
+    <string name="device_smoke_no_warning">设备舱无烟雾报警</string>
+    <string name="water_press_low_when_add">补水时，市政水压低</string>
+    <string name="water_tank_low_when_add">补水时，水箱液位低</string>
+
+    <string name="water_press_low">市政水压低</string>
+    <string name="water_tank_low">水箱液位低</string>
+
+    <string name="connecting_net">正在连接网络...</string>
+    <string name="connecting_net1">正在连接网络......</string>
+    <string name="connecting_net2">正在连接网络</string>
+
+    <string name="open_control_system">开启中控系统</string>
+    <string name="close_control_system">关闭中控系统</string>
+
+    <string name="add_water_in_tank">水箱正在补水</string>
+    <string name="disinfect_prepare">消毒准备，请关闭窗逃逸口,离舱并关闭门</string>
+    <string name="no_disinfect_in_emergency">紧急模式不允许消毒</string>
+    <string name="no_add_water_in_emergency">紧急模式不允许补水</string>
+    <string name="disabled_alarm">警示已屏蔽</string>
+    <string name="sewage_need_in_emergency">紧急排污在紧急模式下使用</string>
+    <string name="not_for_o2_co2_smog">O2，CO2浓度和烟雾报警不能屏蔽</string>
+
+    <string name="o2_density_low_1">O2浓度低1级，必须打开门窗或启动生氧装备，系统已启动通风系统强档</string>
+    <string name="o2_density_low_2">O2浓度低2级，必须打开门窗，系统已异动通风系统强档</string>
+    <string name="o2_density_low_3">O3浓度低3级，系统已启动通风系统</string>
+    <string name="co2_density_high_1">CO2浓度高1级，必须打开门窗或启动生氧装备，系统已启动通风系统强档</string>
+    <string name="co2_density_high_2">CO2浓度高2级，必须打开门窗，系统已启动通风系统强档</string>
+    <string name="co2_density_high_3">CO2浓度高3级，系统已启动通风系统</string>
+
+    <string name="o2_density_low_1_item">O2浓度低1级</string>
+    <string name="o2_density_low_2_item">O2浓度低2级</string>
+    <string name="o2_density_low_3_item">O3浓度低3级</string>
+    <string name="co2_density_high_1_item">CO2浓度高1级</string>
+    <string name="co2_density_high_2_item">CO2浓度高2级</string>
+    <string name="co2_density_high_3_item">CO2浓度高3级</string>
+
+    //maintain
+    //environment
+    <string name="environment_status_warning">舱内环境状态/警示</string>
+
+    <string name="environment_status_information">舱内环境状态信息</string>
+    <string name="life_cabin_temperature">生活舱温度</string>
+    <string name="life_cabin_humidity">生活舱湿度</string>
+    <string name="water_rest_percent">水箱剩余水量</string>
+    <string name="water_in_pressure">进水压力</string>
+    <string name="o2_density">O2浓度</string>
+    <string name="co2_density">CO2浓度</string>
+    <string name="ups_power_rest">UPS电源剩余电量</string>
+    <string name="ups_electricity">UPS负载电流</string>
+    <string name="life_cabin_smog_warning">生活舱烟雾报警状态监测</string>
+    <string name="device_cabin_smog_warning">设备舱烟雾报警状态监测</string>
+    <string name="life_cabin_temperature_high">生活舱温度过高</string>
+    <string name="device_cabin_temperature_high">设备舱温度过高</string>
+    <string name="main_air_condition_running">主空调通电状态</string>
+    <string name="backup_air_condition_running">备用空调通电状态</string>
+
+    <string name="environment_warning_information">舱内环境警示信息</string>
+    <!--<string name="o2_density_low_1">O2 density low 1</string>-->
+    <!--<string name="o2_density_low_2">O2 density low 2</string>-->
+    <!--<string name="o2_density_low_3">O2 density low 3</string>-->
+    <!--<string name="co2_density_high_1">CO2 density high 1</string>-->
+    <!--<string name="co2_density_high_2">CO2 density high 2</string>-->
+    <!--<string name="co2_density_high_3">CO2 density high 3</string>-->
+    <!--<string name="ups_load_over_limit">UPS electrical socket overload</string>-->
+    <!--<string name="air_loop_when_emergency">emergency air exchange</string>-->
+    <!--<string name="disinfect_over_time">disinfection needed</string>-->
+    <!--<string name="life_smoke_warning">living area smog alarm</string>-->
+    <!--<string name="device_smoke_warning">equipment compartment smog alarm</string>-->
+
+    //door
+    <string name="door_status_and_warning">舱门状态/警示</string>
+
+    <string name="door_status_information">舱门状态信息</string>
+    <string name="door_compressed">门压紧到位状态</string>
+    <string name="door_decompressed">门解压到位状态</string>
+    <string name="compressing">正在压紧</string>
+    <string name="decompressing">正在解压</string>
+    <string name="door_open_status">门开启状态</string>
+    <string name="door_lock_status">门反锁状态</string>
+
+    <string name="door_warning_information">门警示信息</string>
+    <!--<string name="door_emergency_open">emergency mode door closing fail</string>-->
+    <!--<string name="door_emergency_unimapceted">emergency mode door sealing fail</string>-->
+    <!--<string name="door_manual_in">manual mode on</string>-->
+    <!--<string name="door_opened_when_impacted">hermetic condition fail－door open</string>-->
+    <!--<string name="door_pin_failed">auto bolt fail</string>-->
+    <!--<string name="door_wedge_failed">auto seal wedge fail</string>-->
+    <!--<string name="door_detect_impacted_failed">door sealing fail</string>-->
+
+    //window
+    <string name="window_status_and_warning">窗状态/警示</string>
+
+    <string name="window_status_information">窗状态信息</string>
+    <string name="window_close_status">窗关闭状态</string>
+    <string name="window_middle_position">中间位置</string>
+    <string name="window_open_completely">窗全开状态</string>
+    <!--<string name="window_opening">window opening</string>-->
+    <!--<string name="window_closing">window closing</string>-->
+    <!--<string name="window_init">window position initializing</string>-->
+    <string name="window_1_status_information">1#窗状态信息</string>
+    <string name="window_1_close_status">1#窗关闭状态</string>
+    <string name="window_1_middle_position">1#中间位置</string>
+    <string name="window_1_open_completely">1#窗全开状态</string>
+    <string name="window_2_status_information">1#窗状态信息</string>
+    <string name="window_2_close_status">2#窗关闭状态</string>
+    <string name="window_2_middle_position">2#中间位置</string>
+    <string name="window_2_open_completely">2#窗全开状态</string>
+    <string name="window_3_status_information">3#窗状态信息</string>
+    <string name="window_3_close_status">3#窗关闭状态</string>
+    <string name="window_3_middle_position">3#中间位置</string>
+    <string name="window_3_open_completely">3#窗全开状态</string>
+    <string name="window_4_status_information">4#窗状态信息</string>
+    <string name="window_4_close_status">4#窗关闭状态</string>
+    <string name="window_4_middle_position">4#中间位置</string>
+    <string name="window_4_open_completely">4#窗全开状态</string>
+
+    <string name="window_warning_information">窗警示信息</string>
+    <!--<string name="window_emergency_open">window emergency mode closing fail</string>-->
+    <!--<string name="window_position_lost">window position missing</string>-->
+    <!--<string name="window_close_sensor_error">window lock no responding on closing position</string>-->
+    <!--<string name="window_open_sensor_error">window lock no responding on opening position</string>-->
+    <!--<string name="window_manual_mode_on">window manual mode on</string>-->
+    <!--<string name="window_over_torque">window torque overload</string>-->
+    <string name="window_error_code">窗驱动器故障代码</string>
+    <string name="window_1_error_code">1#窗驱动器故障代码</string>
+    <string name="window_2_error_code">2#窗驱动器故障代码</string>
+    <string name="window_3_error_code">3#窗驱动器故障代码</string>
+    <string name="window_4_error_code">4#窗驱动器故障代码</string>
+
+    //escape
+    <string name="escape_status_warning">逃生口状态/警示</string>
+
+    <string name="escape_status_information">逃生口状态信息</string>
+    <string name="scuttle_close_status">天窗关闭状态</string>
+    <string name="scuttle_middle_position">天窗处于中间位置</string>
+    <string name="scuttle_open_status">天窗开启状态</string>
+    <string name="escape_middle_position">逃生口处于中间位置</string>
+    <string name="escape_open_completely">逃生口全开</string>
+    <!--<string name="sunfoor_opening">sunroof opening</string>-->
+    <!--<string name="sunfoor_closing">sunroof closing</string>-->
+    <!--<string name="escape_opening">emergency exit opening</string>-->
+    <!--<string name="escape_closing">emergency exit closing</string>-->
+    <!--<string name="escape_init">emergency exit position initializing</string>-->
+
+    <string name="escape_warning_information">逃生口警示信息</string>
+    <!--<string name="escape_emergency_open">emergency mode exit closing fail</string>-->
+    <!--<string name="escape_manual_in">manual mode on</string>-->
+    <!--<string name="escape_anti_clamp">Mind your hand</string>-->
+    <!--<string name="escape_sensor_lost">escape sensor missing</string>-->
+    <!--<string name="escape_close_sensor_error">emergency exit full close sensor fault</string>-->
+    <!--<string name="escape_open_sensor_error">emergency exit full open sensor fault</string>-->
+    <!--<string name="escape_mechanism_error">possible mechanical err</string>-->
+    <!--<string name="escape_position_lost">position missing</string>-->
+    <!--<string name="escape_over_torque">torque overload</string>-->
+    <string name="escape_error_code">逃逸口驱动器故障代码</string>
+    <string name="door_2_error_code">内门驱动器故障代码</string>
+    <string name="under_escape_error_code">下逃逸口驱动器故障代码</string>
+
+    //control system
+    <string name="control_system">中控系统</string>
+    <string name="ele_status">市电供电状态</string>
+    <string name="ups_status">UPS供电状态</string>
+    <string name="control_system_status">中控系统启停状态</string>
+    <string name="in_emergency">当前处于紧急模式</string>
+    <!--<string name="in_key_emergency">emergency button on</string>-->
+    <string name="ventilate_status">通风换气运行状态</string>
+    <string name="ventilate_level_1">通风换气主风机运行</string>
+    <string name="ventilate_level_2">通风换气备风机运行</string>
+    <string name="water_in">进水总阀门</string>
+    <string name="water_in_tank">水箱进水阀门</string>
+    <string name="sewage_out">排污总阀门</string>
+    <string name="booster_pump">增压泵通电状态</string>
+    <string name="sewage_pump">提污泵通电状态</string>
+    <string name="gas_in_valve_1">进气阀门1</string>
+    <string name="gas_in_valve_2">进气阀门2</string>
+    <string name="gas_out_valve">主排气阀门</string>
+    <string name="gas_out_fan">主排气风机</string>
+    <string name="gas_in_fan_1">进气风机1</string>
+    <string name="gas_in_fan_2">进气风机2</string>
+    <string name="primary_light_status">主照明状态</string>
+    <string name="mood_light_status">氛围灯状态</string>
+    <string name="germ_light_status">消毒灯状态</string>
+    <!--<string name="disinfect_prepare">disinfect prepare,please go out</string>-->
+    <!--<string name="no_disinfect_in_emergency">no disinfect in emergency</string>-->
+    <!--<string name="disinfect_done">disinfect is done</string>-->
+
+    //error and warning
+    <string name="device_error_and_warning">设备故障及警告</string>
+    <!--<string name="escape_line_sensor_error">emergency exit position sensor fault</string>-->
+    <string name="life_temperature_sensor_error">生活舱温度传感器故障</string>
+    <string name="life_humidity_sensor_error">生活舱湿度传感器故障</string>
+    <string name="device_temperature_sensor_error">设备舱温度传感器故障</string>
+    <string name="device_humidity_sensor_error">设备舱湿度传感器故障</string>
+    <!--<string name="o2_sensor_error">O2 sensor fault</string>-->
+    <!--<string name="co2_sensor_error">CO2 sensor fault</string>-->
+    <!--<string name="ups_check_error">UPS status sensor fault</string>-->
+    <!--<string name="gas_in_valve_1_error">air in vent 1 fault</string>-->
+    <!--<string name="gas_in_valve_2_error">air in vent 2 fault</string>-->
+    <!--<string name="gas_out_valve_error">air out vent fault</string>-->
+    <string name="gas_in_fan_1_error">进气风机1故障</string>
+    <string name="gas_in_fan_2_error">进气风机2故障</string>
+    <!--<string name="gas_out_fan_error">air out fan fault</string>-->
+
+    <string name="if_open_control_system">是否确定开启中控系统?</string>
+    <string name="if_close_control_system">关闭中控系统将自动关闭窗、逃逸口、新风系统和照明系统,是否确定关闭中控系统?</string>
+    <string name="if_open_emergency_mode">是否确定启动紧急模式?</string>
+    <string name="if_compress_door">禁止将pad带出舱外执行压紧门操作，是否确定压紧门？</string>
+
+    <string name="should_close_air_condition">紧急模式空调排水阀已关闭，请尽快关闭空调电源!</string>
+
+    <string name="up_escape">上逃逸口</string>
+    <string name="under_escape">下逃逸口</string>
+    <string name="door_2">推拉门</string>
+
+    <string name="tatami_light">榻榻米灯</string>
+    <string name="out_spotlight">外部射灯</string>
+
+</resources>
