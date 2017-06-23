@@ -195,7 +195,7 @@ public class MaintainActivity extends AppCompatActivity implements View.OnClickL
 //            R.string.gas_in_fan_2,
 //            R.string.primary_light_status,
 //            R.string.mood_light_status,
-//            R.string.germ_light_status,
+            R.string.germ_light_status,
             R.string.disinfect_prepare,
             R.string.no_disinfect_in_emergency,
             R.string.disinfect_done
@@ -249,9 +249,14 @@ public class MaintainActivity extends AppCompatActivity implements View.OnClickL
     }
 
     public void initView() {
-        findViewById(R.id.maintain_window_reset).setOnClickListener(this);
+        findViewById(R.id.maintain_window_1_reset).setOnClickListener(this);
+        findViewById(R.id.maintain_window_2_reset).setOnClickListener(this);
+        findViewById(R.id.maintain_window_3_reset).setOnClickListener(this);
+        findViewById(R.id.maintain_window_4_reset).setOnClickListener(this);
         findViewById(R.id.maintain_escape_reset).setOnClickListener(this);
-        findViewById(R.id.maintain_smog_reset).setOnClickListener(this);
+        findViewById(R.id.maintain_under_escape_reset).setOnClickListener(this);
+        findViewById(R.id.maintain_door_2_reset).setOnClickListener(this);
+//        findViewById(R.id.maintain_smog_reset).setOnClickListener(this);
         findViewById(R.id.maintain_control_system).setOnClickListener(this);
         findViewById(R.id.maintain_back).setOnClickListener(this);
         mDisableAlarmImage = (ImageView) findViewById(R.id.maintain_disable_alarm);
@@ -286,18 +291,33 @@ public class MaintainActivity extends AppCompatActivity implements View.OnClickL
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.maintain_window_reset:
-//                mCommunicator.resetWindowWarning();
+            case R.id.maintain_window_1_reset:
+                mCommunicator.resetWindow1Warning();
+                break;
+            case R.id.maintain_window_2_reset:
+                mCommunicator.resetWindow2Warning();
+                break;
+            case R.id.maintain_window_3_reset:
+                mCommunicator.resetWindow3Warning();
+                break;
+            case R.id.maintain_window_4_reset:
+                mCommunicator.resetWindow4Warning();
                 break;
             case R.id.maintain_escape_reset:
                 mCommunicator.resetEscapeWarning();
                 break;
+            case R.id.maintain_under_escape_reset:
+                mCommunicator.resetUnderEscapeWarning();
+                break;
+            case R.id.maintain_door_2_reset:
+                mCommunicator.resetDoor2Warning();
+                break;
             case R.id.maintain_disable_alarm:
                 mCommunicator.switchAlarm();
                 break;
-            case R.id.maintain_smog_reset:
+//            case R.id.maintain_smog_reset:
 //                mCommunicator.resetSmogAlarm();
-                break;
+//                break;
             case R.id.maintain_control_system:
                 if (mIsControlSystemRunning) {
                     showDialog(R.string.if_close_control_system, new View.OnClickListener() {

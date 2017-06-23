@@ -412,12 +412,12 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginStart="44px"
-        android:layout_marginTop="238px">
+        android:layout_marginTop="78px">
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="73px">
             <ImageView
-                android:id="@+id/maintain_window_reset"
+                android:id="@+id/maintain_window_1_reset"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/window_reset"/>
@@ -425,12 +425,57 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/window_reset"/>
+                android:text="@string/window_1_reset"/>
         </FrameLayout>
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="73px"
-            android:layout_marginTop="36px">
+            android:layout_marginTop="20px">
+            <ImageView
+                android:id="@+id/maintain_window_2_reset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/window_reset"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/window_2_reset"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="73px"
+            android:layout_marginTop="20px">
+            <ImageView
+                android:id="@+id/maintain_window_3_reset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/window_reset"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/window_3_reset"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="73px"
+            android:layout_marginTop="20px">
+            <ImageView
+                android:id="@+id/maintain_window_4_reset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/window_reset"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/window_4_reset"/>
+        </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="73px"
+            android:layout_marginTop="20px">
             <ImageView
                 android:id="@+id/maintain_escape_reset"
                 android:layout_width="match_parent"
@@ -445,10 +490,9 @@
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="73px"
-            android:layout_marginTop="36px"
-            android:visibility="invisible">
+            android:layout_marginTop="20px">
             <ImageView
-                android:id="@+id/maintain_smog_reset"
+                android:id="@+id/maintain_under_escape_reset"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:src="@drawable/window_reset"/>
@@ -456,8 +500,39 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/smog_alarm_reset"/>
+                android:text="@string/under_escape_reset"/>
         </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="73px"
+            android:layout_marginTop="20px">
+            <ImageView
+                android:id="@+id/maintain_door_2_reset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/window_reset"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/door_2_reset"/>
+        </FrameLayout>
+        <!--<FrameLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="73px"-->
+            <!--android:layout_marginTop="20px"-->
+            <!--android:visibility="invisible">-->
+            <!--<ImageView-->
+                <!--android:id="@+id/maintain_smog_reset"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:src="@drawable/window_reset"/>-->
+            <!--<TextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:text="@string/smog_alarm_reset"/>-->
+        <!--</FrameLayout>-->
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="73px"
@@ -499,7 +574,7 @@
             android:layout_width="160px"
             android:layout_height="70px"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="228px">
+            android:layout_marginTop="108px">
             <ImageView
                 android:id="@+id/maintain_back"
                 android:layout_width="match_parent"

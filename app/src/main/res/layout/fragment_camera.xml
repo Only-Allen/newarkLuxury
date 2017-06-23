@@ -44,26 +44,46 @@
                 android:textColor="@color/emergencyText"/>
         </FrameLayout>
 
-
-        <FrameLayout
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginLeft="309px"
-            android:layout_marginTop="114px"
-            android:layout_width="164px"
-            android:layout_height="63px">
-            <ImageView
-                android:id="@+id/camera_sewage"
+            android:layout_marginTop="55px"
+            android:orientation="vertical">
+            <FrameLayout
                 android:layout_width="164px"
-                android:layout_height="63px"
-                android:src="@drawable/sewage"/>
-            <com.avatar.newarkluxury.AppTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/sewage"
-                android:textColor="@color/emergencyText"/>
-        </FrameLayout>
+                android:layout_height="64px">
+                <ImageView
+                    android:id="@+id/camera_out_warning"
+                    android:layout_width="164px"
+                    android:layout_height="64px"
+                    android:src="@drawable/out_warning"/>
+                <com.avatar.newarkluxury.AppTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/out_warning"
+                    android:textSize="22px"
+                    android:textColor="@color/emergencyText"/>
+            </FrameLayout>
 
-
+            <FrameLayout
+                android:layout_marginTop="22px"
+                android:layout_width="164px"
+                android:layout_height="63px">
+                <ImageView
+                    android:id="@+id/camera_sewage"
+                    android:layout_width="164px"
+                    android:layout_height="63px"
+                    android:src="@drawable/sewage"/>
+                <com.avatar.newarkluxury.AppTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/sewage"
+                    android:textColor="@color/emergencyText"/>
+            </FrameLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:layout_width="wrap_content"

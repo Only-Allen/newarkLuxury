@@ -656,6 +656,13 @@ public class Communicator {
                 getControlRunnable(Constant.CONTROL_1473, new short[] {Constant.VALUE_1_BIT}),
                 getControlRunnable(Constant.CONTROL_1473, new short[] {0}));
     }
+
+    /**
+     * 外部紧急报警
+     */
+    public void switchOutWarning() {
+
+    }
 /**************************************control end************************************************/
 
 /**************************************query start************************************************/

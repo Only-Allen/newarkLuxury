@@ -12,6 +12,7 @@
     <string name="four">04</string>
 
     <string name="emergency_mode">紧急模式</string>
+    <string name="out_warning">外部紧急报警</string>
     <string name="sewage">紧急排污</string>
     <string name="escape">逃逸口</string>
     <string name="scuttle">天窗</string>
@@ -404,6 +405,7 @@
     <string name="if_close_control_system">关闭中控系统将自动关闭窗、逃逸口、新风系统和照明系统,是否确定关闭中控系统?</string>
     <string name="if_open_emergency_mode">是否确定启动紧急模式?</string>
     <string name="if_compress_door">禁止将pad带出舱外执行压紧门操作，是否确定压紧门？</string>
+    <string name="if_open_out_warning">是否确定开启外部报警?</string>
 
     <string name="should_close_air_condition">紧急模式空调排水阀已关闭，请尽快关闭空调电源!</string>
 

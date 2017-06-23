@@ -109,8 +109,10 @@ public class CameraFragment extends BaseFragment implements View.OnClickListener
 
         mEmergencyImage = (ImageView) v.findViewById(R.id.camera_emergency);
         mSewageImage = (ImageView) v.findViewById(R.id.camera_sewage);
+        mOutWarningImage = (ImageView) v.findViewById(R.id.camera_out_warning);
         mEmergencyImage.setOnClickListener(this);
         mSewageImage.setOnClickListener(this);
+        mOutWarningImage.setOnClickListener(this);
         startEmergencyAnimation();
 
         v.findViewById(R.id.camera_setting).setOnClickListener(this);
@@ -248,6 +250,21 @@ public class CameraFragment extends BaseFragment implements View.OnClickListener
                 break;
             case R.id.camera_setting:
                 startStatusActivity();
+                break;
+            case R.id.camera_out_warning:
+                if (mOutWarningImage.isSelected()) {
+                    mCommunicator.switchOutWarning();
+                    mOutWarningImage.setSelected(false);
+                } else {
+                    showDialog(R.string.if_open_out_warning, new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            mCommunicator.switchOutWarning();
+                            mOutWarningImage.setSelected(true);
+                            dismissWarningDialog();
+                        }
+                    });
+                }
                 break;
             default:
         }

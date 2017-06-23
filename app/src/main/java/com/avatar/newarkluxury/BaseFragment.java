@@ -43,7 +43,7 @@ public abstract class BaseFragment extends Fragment {
     protected static final String STATUS_PASSWORD = "newarkadmin";
     private Typeface mChineseTypeface, mEnglishTypeface;
     protected ImageView mO2DensityImage, mCO2DensityImage, mPowerRestImage,
-            mEmergencyImage, mSewageImage;
+            mEmergencyImage, mSewageImage, mOutWarningImage;
 
     protected TextView mTemperatureText, mHumidityText, mO2DensityText, mCO2DensityText,
             mWaterRestText, mPowerRestText, mO2DensityUnitText, mCO2DensityUnitText;
@@ -296,6 +296,14 @@ public abstract class BaseFragment extends Fragment {
         Drawable drawable2 = mSewageImage.getDrawable();
         if (drawable2 instanceof StateListDrawable) {
             Drawable anim = ((DrawableContainer.DrawableContainerState)drawable2
+                    .getConstantState()).getChild(1);
+            if (anim != null && anim instanceof AnimationDrawable) {
+                ((AnimationDrawable) anim).start();
+            }
+        }
+        Drawable drawable3 = mOutWarningImage.getDrawable();
+        if (drawable3 instanceof StateListDrawable) {
+            Drawable anim = ((DrawableContainer.DrawableContainerState)drawable3
                     .getConstantState()).getChild(1);
             if (anim != null && anim instanceof AnimationDrawable) {
                 ((AnimationDrawable) anim).start();

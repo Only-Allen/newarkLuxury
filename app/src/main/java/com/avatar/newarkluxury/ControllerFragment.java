@@ -134,6 +134,7 @@ public class ControllerFragment extends BaseFragment implements View.OnClickList
 
         mEmergencyImage = (ImageView) v.findViewById(R.id.controller_emergency);
         mSewageImage = (ImageView) v.findViewById(R.id.controller_sewage);
+        mOutWarningImage = (ImageView) v.findViewById(R.id.controller_out_warning);
         mDisinfectImage = (ImageView) v.findViewById(R.id.controller_disinfect);
         mDisinfectImageLeft = (ImageView) v.findViewById(R.id.controller_disinfect_left);
         mDisinfectImageRight = (ImageView) v.findViewById(R.id.controller_disinfect_right);
@@ -164,6 +165,7 @@ public class ControllerFragment extends BaseFragment implements View.OnClickList
         v.findViewById(R.id.controller_language).setOnClickListener(this);
         mEmergencyImage.setOnClickListener(this);
         mSewageImage.setOnClickListener(this);
+        mOutWarningImage.setOnClickListener(this);
         mScuttleImage.setOnClickListener(this);
         mEscapeImage.setOnClickListener(this);
         mEscapeCloseImage.setOnClickListener(this);
@@ -516,6 +518,21 @@ public class ControllerFragment extends BaseFragment implements View.OnClickList
             case R.id.controller_pan_2_open:
             case R.id.controller_pan_2_close:
                 mCommunicator.switchWindGears2();
+                break;
+            case R.id.controller_out_warning:
+                if (mOutWarningImage.isSelected()) {
+                    mCommunicator.switchOutWarning();
+                    mOutWarningImage.setSelected(false);
+                } else {
+                    showDialog(R.string.if_open_out_warning, new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            mCommunicator.switchOutWarning();
+                            mOutWarningImage.setSelected(true);
+                            dismissWarningDialog();
+                        }
+                    });
+                }
                 break;
             default:
         }
