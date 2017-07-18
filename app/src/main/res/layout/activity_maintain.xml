@@ -412,7 +412,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginStart="44px"
-        android:layout_marginTop="78px">
+        android:layout_marginTop="28px">
         <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="73px">
@@ -517,6 +517,21 @@
                 android:layout_gravity="center"
                 android:text="@string/door_2_reset"/>
         </FrameLayout>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="73px"
+            android:layout_marginTop="20px">
+            <ImageView
+                android:id="@+id/maintain_door_2_time_reset"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/window_reset"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/door_2_time_reset"/>
+        </FrameLayout>
         <!--<FrameLayout-->
             <!--android:layout_width="match_parent"-->
             <!--android:layout_height="73px"-->
@@ -574,7 +589,7 @@
             android:layout_width="160px"
             android:layout_height="70px"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="108px">
+            android:layout_marginTop="78px">
             <ImageView
                 android:id="@+id/maintain_back"
                 android:layout_width="match_parent"

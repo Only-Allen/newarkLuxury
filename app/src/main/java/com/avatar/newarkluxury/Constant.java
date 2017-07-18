@@ -66,6 +66,8 @@ public class Constant {
     public static final int CONTROL_1484 = 1483;
     public static final int CONTROL_1489 = 1488;
     public static final int CONTROL_1490 = 1489;
+    public static final int CONTROL_1623 = 1622;
+    public static final int CONTROL_1627 = 1626;
 
 
     //pad state
@@ -138,6 +140,7 @@ public class Constant {
     public static final int STATE_1452 = 1451;
     public static final int STATE_1473 = 1472;
     public static final int STATE_1490 = 1489;
+    public static final int STATE_1631 = 1630;
 
     //pad warning
 //    public static final int WARNING_431 = 430;
@@ -172,5 +175,6 @@ public class Constant {
     public static final int WARNING_1463 = 1462;//int
     public static final int WARNING_1465 = 1464;//int
     public static final int WARNING_1489 = 1488;
+    public static final int WARNING_1629 = 1628;
 
 }

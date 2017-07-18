@@ -110,9 +110,11 @@ public class CameraFragment extends BaseFragment implements View.OnClickListener
         mEmergencyImage = (ImageView) v.findViewById(R.id.camera_emergency);
         mSewageImage = (ImageView) v.findViewById(R.id.camera_sewage);
         mOutWarningImage = (ImageView) v.findViewById(R.id.camera_out_warning);
+        mVoiceWarningImage = (ImageView) v.findViewById(R.id.camera_voice_warning);
         mEmergencyImage.setOnClickListener(this);
         mSewageImage.setOnClickListener(this);
         mOutWarningImage.setOnClickListener(this);
+        mVoiceWarningImage.setOnClickListener(this);
         startEmergencyAnimation();
 
         v.findViewById(R.id.camera_setting).setOnClickListener(this);
@@ -261,6 +263,21 @@ public class CameraFragment extends BaseFragment implements View.OnClickListener
                         public void onClick(View v) {
                             mCommunicator.switchOutWarning();
                             mOutWarningImage.setSelected(true);
+                            dismissWarningDialog();
+                        }
+                    });
+                }
+                break;
+            case R.id.camera_voice_warning:
+                if (mVoiceWarningImage.isSelected()) {
+                    mCommunicator.switchVoiceWarning();
+                    mVoiceWarningImage.setSelected(false);
+                } else {
+                    showDialog(R.string.if_open_voice_warning, new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            mCommunicator.switchVoiceWarning();
+                            mVoiceWarningImage.setSelected(true);
                             dismissWarningDialog();
                         }
                     });
@@ -492,6 +509,7 @@ public class CameraFragment extends BaseFragment implements View.OnClickListener
 //        setSmogWarningState(state.isLifeSmogWarning(), state.isDeviceSmogWarning());
         setEmergencyMode(state.isInEmergency(), state.isSewageOn());
         setModelState(state);
+        setOutWarningState(state.isLightWarningOn(), state.isVoiceWarningOn());
     }
 
     public void setEmergencyMode(boolean emergency, boolean sewage) {

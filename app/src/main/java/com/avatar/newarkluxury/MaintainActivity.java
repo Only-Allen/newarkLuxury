@@ -256,6 +256,7 @@ public class MaintainActivity extends AppCompatActivity implements View.OnClickL
         findViewById(R.id.maintain_escape_reset).setOnClickListener(this);
         findViewById(R.id.maintain_under_escape_reset).setOnClickListener(this);
         findViewById(R.id.maintain_door_2_reset).setOnClickListener(this);
+        findViewById(R.id.maintain_door_2_time_reset).setOnClickListener(this);
 //        findViewById(R.id.maintain_smog_reset).setOnClickListener(this);
         findViewById(R.id.maintain_control_system).setOnClickListener(this);
         findViewById(R.id.maintain_back).setOnClickListener(this);
@@ -311,6 +312,9 @@ public class MaintainActivity extends AppCompatActivity implements View.OnClickL
                 break;
             case R.id.maintain_door_2_reset:
                 mCommunicator.resetDoor2Warning();
+                break;
+            case R.id.maintain_door_2_time_reset:
+                mCommunicator.resetPutterTimeOut();
                 break;
             case R.id.maintain_disable_alarm:
                 mCommunicator.switchAlarm();

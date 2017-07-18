@@ -181,6 +181,9 @@ public class MachineState implements Serializable {
     private int mDoor2ErrorCode;
     private int mUnderEscapeErrorCode;
 
+    private boolean mPutterTimeOut;
+    private boolean mLightWarning, mVoiceWarning;
+
     public void fillData(int start,int value) {
         switch (start) {
             case Constant.STATE_1003:
@@ -649,6 +652,19 @@ public class MachineState implements Serializable {
                     mGasOutRightValveError = true;
                 }
                 break;
+            case Constant.STATE_1631:
+                if ((value & Constant.VALUE_0_BIT) != 0) {
+                    mVoiceWarning = true;
+                }
+                if ((value & Constant.VALUE_1_BIT) != 0) {
+                    mLightWarning = true;
+                }
+                break;
+            case Constant.WARNING_1629:
+                if ((value & Constant.VALUE_0_BIT) != 0) {
+                    mPutterTimeOut = true;
+                }
+                break;
             default:
         }
     }
@@ -852,6 +868,14 @@ public class MachineState implements Serializable {
 
     public boolean isHumiditySensorError() {
         return mHumiditySensorError;
+    }
+
+    public boolean isLightWarningOn() {
+        return mLightWarning;
+    }
+
+    public boolean isVoiceWarningOn() {
+        return mVoiceWarning;
     }
 
     public String getO2Warning() {
@@ -1446,6 +1470,9 @@ public class MachineState implements Serializable {
         }
         if (mIsAlarmDisabled) {
             warningStringIds.add(R.string.disabled_alarm);
+        }
+        if (mPutterTimeOut) {
+            warningStringIds.add(R.string.putter_time_out);
         }
         return warningStringIds;
     }

@@ -57,6 +57,9 @@ public class Communicator {
     private int startAddress2 = Constant.WARNING_1413;
     private int endAddress2 = Constant.STATE_1490;
 
+    private int startAddress3 = Constant.WARNING_1629;
+    private int endAddress3 = Constant.STATE_1631;
+
     private int unsignedShortMax = 0xffff;
 
     private ScheduledExecutorService mControlExecutor;
@@ -150,6 +153,11 @@ public class Communicator {
             Constant.WARNING_1489
     };
 
+    private int mSingleShortAddress3[] = {
+            Constant.WARNING_1629,
+            Constant.STATE_1631
+    };
+
     private int mWordAddress2[] = {
             Constant.WARNING_1453,
             Constant.WARNING_1455,
@@ -221,6 +229,7 @@ public class Communicator {
     private byte[] query(int start, int readLength) {
         try {
             //ReadHoldingRegistersRequest的功能码是03
+            //1 < readLength < 125 大于125需要分次请求
             ModbusRequest request = new ReadHoldingRegistersRequest(SLAVE_ID, start, readLength);
             ModbusResponse response = mTcpMaster.send(request);
 
@@ -658,10 +667,30 @@ public class Communicator {
     }
 
     /**
-     * 外部紧急报警
+     * 外部灯光报警
      */
     public void switchOutWarning() {
+        sendControlRequest(
+                getControlRunnable(Constant.CONTROL_1623, new short[] {Constant.VALUE_0_BIT}),
+                getControlRunnable(Constant.CONTROL_1623, new short[] {0}));
+    }
 
+    /**
+     * 外部声光报警
+     */
+    public void switchVoiceWarning() {
+        sendControlRequest(
+                getControlRunnable(Constant.CONTROL_1623, new short[] {Constant.VALUE_1_BIT}),
+                getControlRunnable(Constant.CONTROL_1623, new short[] {0}));
+    }
+
+    /**
+     *推拉动作超时复位
+     */
+    public void resetPutterTimeOut() {
+        sendControlRequest(
+                getControlRunnable(Constant.CONTROL_1627, new short[] {Constant.VALUE_0_BIT}),
+                getControlRunnable(Constant.CONTROL_1627, new short[] {0}));
     }
 /**************************************control end************************************************/
 
@@ -778,6 +807,15 @@ public class Communicator {
                 return;
             }
             fillState(Constant.STATE_1003, bytes3);
+
+            byte[] bytes4 = sendQueryRequest(getQueryCallable(startAddress3,
+                    endAddress3 - startAddress3 + 1));
+
+            for (int i : mSingleShortAddress3) {
+                byte[] newBytes = new byte[2];
+                System.arraycopy(bytes4, (i - startAddress2) * 2, newBytes, 0, 2);
+                fillState(i, newBytes);
+            }
 
         } catch (Exception e) {
             mLogger.error("queryTotalMessage error:\n", e);

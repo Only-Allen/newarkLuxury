@@ -12,7 +12,8 @@
     <string name="four">04</string>
 
     <string name="emergency_mode">紧急模式</string>
-    <string name="out_warning">外部紧急报警</string>
+    <string name="out_voice_warning">声光报警</string>
+    <string name="out_light_warning">灯光报警</string>
     <string name="sewage">紧急排污</string>
     <string name="escape">逃逸口</string>
     <string name="scuttle">天窗</string>
@@ -60,6 +61,7 @@
     <string name="window_reset">窗驱动器报警复位</string>
     <string name="escape_reset">逃逸口驱动器报警复位</string>
     <string name="door_2_reset">内门驱动器报警复位</string>
+    <string name="door_2_time_reset">内门推杆电动机超时复位</string>
     <string name="under_escape_reset">下逃逸口驱动器报警复位</string>
     <string name="smog_alarm_reset">烟雾报警复位</string>
     <string name="disable_alarm">屏蔽警示</string>
@@ -406,6 +408,7 @@
     <string name="if_open_emergency_mode">是否确定启动紧急模式?</string>
     <string name="if_compress_door">禁止将pad带出舱外执行压紧门操作，是否确定压紧门？</string>
     <string name="if_open_out_warning">是否确定开启外部报警?</string>
+    <string name="if_open_voice_warning">是否确定开启声光报警?</string>
 
     <string name="should_close_air_condition">紧急模式空调排水阀已关闭，请尽快关闭空调电源!</string>
 
@@ -415,5 +418,7 @@
 
     <string name="tatami_light">榻榻米灯</string>
     <string name="out_spotlight">外部射灯</string>
+
+    <string name="putter_time_out">推杆动作超时</string>
 
 </resources>

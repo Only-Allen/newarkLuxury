@@ -25,31 +25,12 @@
                 android:layout_gravity="center"/>
         </FrameLayout>
 
-        <FrameLayout
-            android:layout_marginLeft="60px"
-            android:layout_marginTop="96px"
-            android:layout_width="225px"
-            android:layout_height="86px">
-            <ImageView
-                android:id="@+id/camera_emergency"
-                android:layout_width="225px"
-                android:layout_height="86px"
-                android:src="@drawable/emergency_mode"/>
-            <com.avatar.newarkluxury.AppTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:text="@string/emergency_mode"
-                android:textSize="22px"
-                android:textColor="@color/emergencyText"/>
-        </FrameLayout>
-
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="309px"
-            android:layout_marginTop="55px"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginLeft="60px"
+            android:layout_marginTop="62px">
             <FrameLayout
                 android:layout_width="164px"
                 android:layout_height="64px">
@@ -62,15 +43,60 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:text="@string/out_warning"
+                    android:text="@string/out_light_warning"
+                    android:textSize="22px"
+                    android:textColor="@color/emergencyText"/>
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="164px"
+                android:layout_height="64px"
+                android:layout_marginTop="16px">
+                <ImageView
+                    android:id="@+id/camera_voice_warning"
+                    android:layout_width="164px"
+                    android:layout_height="64px"
+                    android:src="@drawable/voice_warning"/>
+                <com.avatar.newarkluxury.AppTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/out_voice_warning"
+                    android:textSize="22px"
+                    android:textColor="@color/emergencyText"/>
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="248px"
+            android:layout_marginTop="50px"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="225px"
+                android:layout_height="86px">
+                <ImageView
+                    android:id="@+id/camera_emergency"
+                    android:layout_width="225px"
+                    android:layout_height="86px"
+                    android:src="@drawable/emergency_mode"
+                    android:rotation="180"/>
+                <com.avatar.newarkluxury.AppTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/emergency_mode"
                     android:textSize="22px"
                     android:textColor="@color/emergencyText"/>
             </FrameLayout>
 
             <FrameLayout
-                android:layout_marginTop="22px"
+                android:layout_marginTop="16px"
                 android:layout_width="164px"
-                android:layout_height="63px">
+                android:layout_height="63px"
+                android:layout_gravity="center_horizontal">
                 <ImageView
                     android:id="@+id/camera_sewage"
                     android:layout_width="164px"

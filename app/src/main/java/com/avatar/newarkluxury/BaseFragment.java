@@ -43,7 +43,7 @@ public abstract class BaseFragment extends Fragment {
     protected static final String STATUS_PASSWORD = "newarkadmin";
     private Typeface mChineseTypeface, mEnglishTypeface;
     protected ImageView mO2DensityImage, mCO2DensityImage, mPowerRestImage,
-            mEmergencyImage, mSewageImage, mOutWarningImage;
+            mEmergencyImage, mSewageImage, mOutWarningImage, mVoiceWarningImage;
 
     protected TextView mTemperatureText, mHumidityText, mO2DensityText, mCO2DensityText,
             mWaterRestText, mPowerRestText, mO2DensityUnitText, mCO2DensityUnitText;
@@ -309,6 +309,14 @@ public abstract class BaseFragment extends Fragment {
                 ((AnimationDrawable) anim).start();
             }
         }
+        Drawable drawable4 = mVoiceWarningImage.getDrawable();
+        if (drawable4 instanceof StateListDrawable) {
+            Drawable anim = ((DrawableContainer.DrawableContainerState)drawable4
+                    .getConstantState()).getChild(1);
+            if (anim != null && anim instanceof AnimationDrawable) {
+                ((AnimationDrawable) anim).start();
+            }
+        }
     }
 
 //    public void startSmogAnimation() {
@@ -449,4 +457,17 @@ public abstract class BaseFragment extends Fragment {
 //            mDeviceSmogWarningText.setText(R.string.device_smoke_no_warning);
 //        }
 //    }
+
+    public void setOutWarningState(boolean light, boolean voice) {
+        if (light) {
+            mOutWarningImage.setSelected(true);
+        } else {
+            mOutWarningImage.setSelected(false);
+        }
+        if (voice) {
+            mVoiceWarningImage.setSelected(true);
+        } else {
+            mOutWarningImage.setSelected(false);
+        }
+    }
 }

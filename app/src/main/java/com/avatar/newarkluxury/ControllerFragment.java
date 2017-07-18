@@ -135,6 +135,7 @@ public class ControllerFragment extends BaseFragment implements View.OnClickList
         mEmergencyImage = (ImageView) v.findViewById(R.id.controller_emergency);
         mSewageImage = (ImageView) v.findViewById(R.id.controller_sewage);
         mOutWarningImage = (ImageView) v.findViewById(R.id.controller_out_warning);
+        mVoiceWarningImage = (ImageView) v.findViewById(R.id.controller_voice_warning);
         mDisinfectImage = (ImageView) v.findViewById(R.id.controller_disinfect);
         mDisinfectImageLeft = (ImageView) v.findViewById(R.id.controller_disinfect_left);
         mDisinfectImageRight = (ImageView) v.findViewById(R.id.controller_disinfect_right);
@@ -166,6 +167,7 @@ public class ControllerFragment extends BaseFragment implements View.OnClickList
         mEmergencyImage.setOnClickListener(this);
         mSewageImage.setOnClickListener(this);
         mOutWarningImage.setOnClickListener(this);
+        mVoiceWarningImage.setOnClickListener(this);
         mScuttleImage.setOnClickListener(this);
         mEscapeImage.setOnClickListener(this);
         mEscapeCloseImage.setOnClickListener(this);
@@ -534,6 +536,21 @@ public class ControllerFragment extends BaseFragment implements View.OnClickList
                     });
                 }
                 break;
+            case R.id.controller_voice_warning:
+                if (mVoiceWarningImage.isSelected())  {
+                    mCommunicator.switchVoiceWarning();
+                    mVoiceWarningImage.setSelected(false);
+                } else {
+                    showDialog(R.string.if_open_voice_warning, new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            mCommunicator.switchVoiceWarning();
+                            mVoiceWarningImage.setSelected(true);
+                            dismissWarningDialog();
+                        }
+                    });
+                }
+                break;
             default:
         }
         mCommunicator.reStartCommunicate();
@@ -576,6 +593,7 @@ public class ControllerFragment extends BaseFragment implements View.OnClickList
         setAddWaterState(state.isAddingWater());
         setErrorImage(state);
         setEmergencyMode(state.isInEmergency(), state.isSewageOn());
+        setOutWarningState(state.isLightWarningOn(), state.isVoiceWarningOn());
         fillPromptText(state);
         fillWarningText(state);
         showPromptAndWarning();
