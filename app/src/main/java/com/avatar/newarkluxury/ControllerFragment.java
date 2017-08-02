@@ -671,8 +671,8 @@ public class ControllerFragment extends BaseFragment implements View.OnClickList
         }
     }
 
-    public void setLightState(boolean primaryOn, boolean toiletOn, boolean mood1On,
-                              boolean mood2On, boolean outOn, boolean tatamiOn) {
+    public void setLightState(boolean primaryOn, boolean mood1On, boolean mood2On,
+                                boolean toiletOn, boolean outOn, boolean tatamiOn) {
         if (primaryOn) {
             mPrimaryIcon.setSelected(true);
         } else {

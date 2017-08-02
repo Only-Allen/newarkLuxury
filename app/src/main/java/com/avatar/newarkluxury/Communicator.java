@@ -51,7 +51,7 @@ public class Communicator {
 
     private MachineState mCurrentState, mNextState;
 
-    private int startAddress = Constant.STATE_1347;//最低地址
+    private int startAddress = Constant.WARNING_1325;//最低地址
     private int endAddress = Constant.STATE_1381;//最高地址
 
     private int startAddress2 = Constant.WARNING_1413;
@@ -813,7 +813,7 @@ public class Communicator {
 
             for (int i : mSingleShortAddress3) {
                 byte[] newBytes = new byte[2];
-                System.arraycopy(bytes4, (i - startAddress2) * 2, newBytes, 0, 2);
+                System.arraycopy(bytes4, (i - startAddress3) * 2, newBytes, 0, 2);
                 fillState(i, newBytes);
             }
 
